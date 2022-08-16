@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="S01ServeletBasics" path="/S01ServeletBasics" reloadable="true" source="org.eclipse.jst.jee.server:S01ServeletBasics"/></Host>
+      <Context docBase="bookstorewebapp1" path="/bookstorewebapp1" reloadable="true" source="org.eclipse.jst.jee.server:bookstorewebapp1"/><Context docBase="developingbackendadmin" path="/developingbackendadmin" reloadable="true" source="org.eclipse.jst.jee.server:developingbackendadmin"/><Context docBase="HibernateConfig" path="/HibernateConfig" reloadable="true" source="org.eclipse.jst.jee.server:HibernateConfig"/><Context docBase="HibernateConfig1" path="/HibernateConfig1" reloadable="true" source="org.eclipse.jst.jee.server:HibernateConfig1"/><Context docBase="HibernateConfig2" path="/HibernateConfig2" reloadable="true" source="org.eclipse.jst.jee.server:HibernateConfig2"/><Context docBase="HibernateListMapping" path="/HibernateListMapping" reloadable="true" source="org.eclipse.jst.jee.server:HibernateListMapping"/><Context docBase="HibernateLazyCollections" path="/HibernateLazyCollections" reloadable="true" source="org.eclipse.jst.jee.server:HibernateLazyCollections"/><Context docBase="HibernateComponentMapping" path="/HibernateComponentMapping" reloadable="true" source="org.eclipse.jst.jee.server:HibernateComponentMapping"/></Host>
     </Engine>
   </Service>
 </Server>

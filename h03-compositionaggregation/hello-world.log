@@ -1,0 +1,36 @@
+12:51:17,677 DEBUG SQL:103 - 
+    
+    drop table if exists User
+12:51:20,183 DEBUG SQL:103 - 
+    
+    create table User (
+       id bigint not null auto_increment,
+        age integer,
+        billing_city varchar(255),
+        billing_houseno varchar(255),
+        billing_pincode varchar(255),
+        billing_street varchar(255),
+        name varchar(255),
+        shipping_city varchar(255),
+        shipping_houseno varchar(255),
+        shipping_pincode varchar(255),
+        shipping_street varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+12:51:21,298 DEBUG SQL:103 - 
+    insert 
+    into
+        User
+        (age, billing_city, billing_houseno, billing_pincode, billing_street, name, shipping_city, shipping_houseno, shipping_pincode, shipping_street) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+12:51:21,347 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [34]
+12:51:21,348 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [Chennai]
+12:51:21,349 TRACE BasicBinder:65 - binding parameter [3] as [VARCHAR] - [12]
+12:51:21,349 TRACE BasicBinder:65 - binding parameter [4] as [VARCHAR] - [612345]
+12:51:21,349 TRACE BasicBinder:65 - binding parameter [5] as [VARCHAR] - [Main Street]
+12:51:21,350 TRACE BasicBinder:65 - binding parameter [6] as [VARCHAR] - [Ajay]
+12:51:21,350 TRACE BasicBinder:65 - binding parameter [7] as [VARCHAR] - [Trichy]
+12:51:21,350 TRACE BasicBinder:65 - binding parameter [8] as [VARCHAR] - [65/12]
+12:51:21,350 TRACE BasicBinder:65 - binding parameter [9] as [VARCHAR] - [412385]
+12:51:21,350 TRACE BasicBinder:65 - binding parameter [10] as [VARCHAR] - [Busy Street]
